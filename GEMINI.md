@@ -1,10 +1,10 @@
-# PROJECT CONTEXT: HYAENA (Dental Microwear Analysis)
+# PROJECT CONTEXT: MiQAT (Microwear Quantification and Analysis Toolkit)
 
 ## 1. Project Overview
-**Hyaena** is a scientific web application for 2D Dental Microwear Analysis. It processes geometric features (Pits and Scratches) extracted from low-magnification images to infer the diet of ancient specimens (Paleoecology).
+**MiQAT** (Microwear Quantification and Analysis Toolkit) is a scientific web application for 2D Dental Microwear Analysis. It processes geometric features (Pits and Scratches) extracted from low-magnification images to infer the diet of ancient specimens (Paleoecology).
 The app is designed as a **Progressive Web App (PWA)**, usable offline and installable on devices.
 
-**Current Version**: `v0.25.0` (Refactored Modular)
+**Current Version**: `v0.26.17` (Refactored Modular)
 
 ## 2. Tech Stack & Architecture
 *   **Core**: Vanilla JavaScript (ES6+), HTML5, CSS3.

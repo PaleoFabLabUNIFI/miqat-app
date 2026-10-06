@@ -34,7 +34,7 @@ window.saveProject = function () {
         return;
     }
     const projectData = {
-        type: "hyaena_project",
+        type: "miqat_project",
         version: 1,
         name: currentProjectName,
         date: new Date().toISOString(),
@@ -409,7 +409,7 @@ window.importAllStaged = async function () {
                     const data = JSON.parse(evt.target.result);
                     // Normalize to sample object
                     let s = null;
-                    if (data.type === 'hyaena_project') {
+                    if (data.type === 'miqat_project' || data.type === 'hyaena_project') {
                         // If user selected a project file by mistake in batch, take its samples
                         s = data.samples || [];
                     } else {
@@ -524,7 +524,7 @@ window.handleFileSelection = function (e) {
         reader.onload = evt => {
             try {
                 const data = JSON.parse(evt.target.result);
-                if (data.type === "hyaena_project") {
+                if (data.type === "miqat_project" || data.type === "hyaena_project") {
                     const newSamples = data.samples || [];
                     const newProjName = data.name || "Imported_Project";
 

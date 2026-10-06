@@ -4,9 +4,9 @@
 // ==========================================================================
 
 const APP = {
-    version: '0.26.13',
+    version: '0.26.17',
     init: function () {
-        console.log("Hyaena App v" + this.version + " Initializing...");
+        console.log("MiQAT App v" + this.version + " Initializing...");
 
         // Element bindings
         this.bindEvents();
@@ -15,7 +15,7 @@ const APP = {
         this.registerSW();
 
         // Initial State
-        const savedTheme = localStorage.getItem('hyaena_theme') || 'light';
+        const savedTheme = localStorage.getItem('miqat_theme') || localStorage.getItem('hyaena_theme') || 'light';
         setTheme(savedTheme);
 
         // Start with one empty sample

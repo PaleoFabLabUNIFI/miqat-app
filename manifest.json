@@ -1,6 +1,6 @@
 {
-  "name": "Hyaena",
-  "short_name": "Hyaena",
+  "name": "MiQAT - Microwear Quantification and Analysis Toolkit",
+  "short_name": "MiQAT",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",

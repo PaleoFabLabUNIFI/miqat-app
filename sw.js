@@ -2,7 +2,7 @@
 // SERVICE WORKER CONFIGURATION
 // ==========================================================================
 
-const CACHE_NAME = 'hyaena-v0.26.14'; // New version
+const CACHE_NAME = 'miqat-v0.26.17'; // New version
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",
@@ -30,7 +30,7 @@ self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log("[Service Worker] Caching all: app shell and content");
-      return cache.addAll(ASSETS);
+      return cache.addAll(ASSETS_TO_CACHE);
     })
   );
 });

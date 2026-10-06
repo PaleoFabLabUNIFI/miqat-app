@@ -22,8 +22,8 @@ describe('Version Consistency', () => {
 
     it('should have the same version in sw.js cache name', () => {
         const swJsContent = fs.readFileSync(swJsPath, 'utf-8');
-        // Look for CACHE_NAME = 'hyaena-vX.Y.Z'
-        const match = swJsContent.match(/CACHE_NAME\s*=\s*'hyaena-v([^']+)'/);
+        // Look for CACHE_NAME = 'miqat-vX.Y.Z'
+        const match = swJsContent.match(/CACHE_NAME\s*=\s*'miqat-v([^']+)'/);
         expect(match).toBeDefined();
         expect(match[1]).toBe(currentVersion);
     });
@@ -31,7 +31,7 @@ describe('Version Consistency', () => {
     it('should have the same version in index.html footer', () => {
         const indexHtmlContent = fs.readFileSync(indexHtmlPath, 'utf-8');
         // Look for vX.Y.Z in text
-        const match = indexHtmlContent.match(/Hyaena v([\d\.]+)/);
+        const match = indexHtmlContent.match(/MiQAT v([\d\.]+)/);
         expect(match).toBeDefined();
         expect(match[1]).toBe(currentVersion);
     });

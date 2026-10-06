@@ -27,7 +27,7 @@ window.onclick = function (event) {
 // ==========================================================================
 
 window.setTheme = function (theme) {
-    localStorage.setItem('hyaena_theme', theme);
+    localStorage.setItem('miqat_theme', theme);
     applyTheme(theme);
     updateThemeUI(theme);
 };
